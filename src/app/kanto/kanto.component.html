@@ -1,0 +1,12 @@
+<div class="menu">
+      <h2>Region Kanto</h2>
+      @for (pokemon of pokemonService.kanto(); track pokemon.Name) {
+        <p>
+      <strong>{{ pokemon.Name }}</strong> ({{ pokemon.Type }})  
+      - Held Item: {{ pokemon.HeldItem }}  
+      <br>
+      {{ pokemon.Desc }}
+    </p>
+      }
+    </div>
+

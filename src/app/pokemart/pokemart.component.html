@@ -1,0 +1,12 @@
+<div class="menu">
+  <h2>Pokémart Items</h2>
+  @for (product of pokemonService.item(); track product.Name) {
+    <p>
+      {{ product.Name }} - ₱{{ product.Price }}
+      <button (click)="pokemonService.addToCart(product)">Add to Cart</button>
+    </p>
+  }
+  <app-pokecart></app-pokecart>
+</div>
+
+

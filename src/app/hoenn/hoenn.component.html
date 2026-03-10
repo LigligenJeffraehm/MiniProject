@@ -1,0 +1,11 @@
+<div class="menu">
+    <h2>Johto Region Pokemon</h2>
+    @for(pokemon of pokemonService.hoenn(); track pokemon.Name ){
+        <p>
+            {{pokemon.Name}}
+            {{pokemon.Type}}
+            {{pokemon.HeldItem}}
+            {{pokemon.Desc}}
+        </p>
+    }
+</div>
