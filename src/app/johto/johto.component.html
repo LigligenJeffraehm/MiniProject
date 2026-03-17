@@ -1,11 +1,14 @@
 <div class="menu">
-    <h2>Johto Region Pokemon</h2>
-    @for(pokemon of pokemonService.johto(); track pokemon.Name ){
-        <p>
-            {{pokemon.Name}}
-            {{pokemon.Type}}
-            {{pokemon.HeldItem}}
-            {{pokemon.Desc}}
-        </p>
+  <h2>Region Johto</h2>
+  <div class="pokemon-grid">
+    @for (pokemon of pokemonService.johto(); track pokemon.Name) {
+      <div class="pokemon-card">
+        <h3>{{ pokemon.Name }}</h3>
+        <img [src]="pokemon.image" alt="{{ pokemon.Name }}" class="pokemon-image" />
+        <p><strong>Type:</strong> {{ pokemon.Type }}</p>
+        <p><strong>Held Item:</strong> {{ pokemon.HeldItem }}</p>
+        <p>{{ pokemon.Desc }}</p>
+      </div>
     }
+  </div>
 </div>

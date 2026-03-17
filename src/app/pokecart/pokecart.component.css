@@ -1,0 +1,39 @@
+.menu {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fafafa;
+  font-family: Arial, sans-serif;
+}
+
+.menu h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.menu p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.menu button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+}
+
+.menu button:hover {
+  background-color: #2980b9;
+}

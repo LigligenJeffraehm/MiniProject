@@ -1,0 +1,54 @@
+.menu {
+  background-color: #f8f9fa;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+.menu h2 {
+  font-family: Arial, sans-serif;
+  font-size: 1.8em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Grid layout for cards */
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Individual card styling */
+.pokemon-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pokemon-card h3 {
+  font-size: 1.3em;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+.pokemon-image {
+  width: 150px;       /* fixed width */
+  height: 150px;      /* fixed height */
+  object-fit: contain; /* keeps aspect ratio, fits inside box */
+  display: block;
+  margin: 0.5rem auto;
+}
+
+
+.pokemon-card p {
+  font-size: 0.95em;
+  color: #555;
+  margin: 6px 0;
+}

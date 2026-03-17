@@ -1,12 +1,14 @@
 <div class="menu">
-      <h2>Region Kanto</h2>
-      @for (pokemon of pokemonService.kanto(); track pokemon.Name) {
-        <p>
-      <strong>{{ pokemon.Name }}</strong> ({{ pokemon.Type }})  
-      - Held Item: {{ pokemon.HeldItem }}  
-      <br>
-      {{ pokemon.Desc }}
-    </p>
-      }
-    </div>
-
+  <h2>Region Kanto</h2>
+  <div class="pokemon-grid">
+    @for (pokemon of pokemonService.kanto(); track pokemon.Name) {
+      <div class="pokemon-card">
+        <h3>{{ pokemon.Name }}</h3>
+        <img [src]="pokemon.image" alt="{{ pokemon.Name }}" class="pokemon-image" />
+        <p><strong>Type:</strong> {{ pokemon.Type }}</p>
+        <p><strong>Held Item:</strong> {{ pokemon.HeldItem }}</p>
+        <p>{{ pokemon.Desc }}</p>
+      </div>
+    }
+  </div>
+</div>

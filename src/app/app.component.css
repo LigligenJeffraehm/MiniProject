@@ -1,0 +1,75 @@
+.cart {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.cart h3 {
+  font-size: 1.6em;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Item lines */
+.cart > div {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 8px 0;
+  font-size: 1em;
+  color: #34495e;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cart > div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+/* Empty cart message */
+.cart p {
+  font-style: italic;
+  color: #888;
+  text-align: center;
+}
+
+/* Divider */
+.cart hr {
+  margin: 15px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+/* Total */
+.cart h4 {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #27ae60;
+  text-align: right;
+}
+
+/* Checkout button */
+.cart button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cart button:hover {
+  background-color: #c0392b;
+}
