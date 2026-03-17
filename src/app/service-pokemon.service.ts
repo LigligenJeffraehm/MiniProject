@@ -59,3 +59,4 @@ export class ServicePokemonService {
     this.cartItems.set([]);
   }
 }
+
